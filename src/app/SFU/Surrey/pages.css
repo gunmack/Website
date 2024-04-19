@@ -1,0 +1,28 @@
+.embla {
+    overflow: hidden;
+}
+  /* .embla__container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  } */
+.embla__slide {
+    flex: 0 0 auto; /* Adapt slide size to its content */
+    min-width: 0;
+    width: 75%; /* Prevent from growing larger than viewport */
+    max-height: 50%;
+    margin:10%;
+    padding:5%;
+}
+@media (min-width: 768px) {
+    .embla__slide {
+      flex: 0 0 50%; /* Breakpoint SM slide covers 50% of the viewport */
+      margin-right: 20px; /* Breakpoint SM gap */
+    }
+  }
+.embla__container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%; /* Each slide covers 80% of the viewport */
+}
+  
