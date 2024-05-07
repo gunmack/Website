@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-between py-10 px-30 text-lg rounded-lg">
         <h1> <br></br>
-          <Link href="https://github.com/gunmack" target="_blank" className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> LinkedIn</Link>
+          <Link href="https://github.com/gunmack" target="_blank" className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> GitHub</Link>
         </h1>
       </div>
     </div>
