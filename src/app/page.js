@@ -7,43 +7,43 @@ import axios from 'axios';
 
 export default function Home() {
 
-  const [data, setData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+//  const [data, setData] = useState(null);
+//  const [isLoading, setIsLoading] = useState(true);
+//  const [error, setError] = useState(null);
   
   // const [currentTime, setCurrentTime] = useState('');
 
-  useEffect(() => {
-    const fetchData = async () => {
+//  useEffect(() => {
+ //   const fetchData = async () => {
       // const zone = "America/Vancouver";
-      try {
-        const resp = await axios.get(`http://worldtimeapi.org/api/timezone/America/Vancouver`); // Replace with your Flask server URL
-        const response = resp.data;
+   //   try {
+    //    const resp = await axios.get(`http://worldtimeapi.org/api/timezone/America/Vancouver`); // Replace with your Flask server URL
+    //    const response = resp.data;
         // if (!response.ok) {
         //   throw new Error('Network response was not ok');
         // }
-        const responseData = response.datetime;
-        const Time = responseData.slice(11,16)
-        setData(Time);
-        setIsLoading(false);
-      } catch (error) {
-        setError(error);
-        setIsLoading(false);
-      }
-    };
+ //       const responseData = response.datetime;
+   //     const Time = responseData.slice(11,16)
+  //      setData(Time);
+   //     setIsLoading(false);
+  //    } catch (error) {
+//        setError(error);
+  //      setIsLoading(false);
+//      }
+  //  };
 
-    fetchData();
-  }, []);
+//    fetchData();
+//  }, []);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+//  if (isLoading) {
+  //  return <div>Loading...</div>;
+ // }
 
-  if (error) {
-    return <div>
-        Error: {error.message}
-        </div>;
-  }
+ // if (error) {
+  //  return <div>
+    //    Error: {error.message}
+    //    </div>;
+ // }
   
 //   const response = await axios.get('http://worldtimeapi.org/api/timezone/America/Vancouver');
 //   const data_x = response.data;
@@ -130,14 +130,14 @@ export default function Home() {
           <Link href="/Time" target="_blank" className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Clock</Link>
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-between py-2 px-2 bg-green-900 rounded-lg">
+  {/* <div className="flex flex-col items-center justify-between py-2 px-2 bg-green-900 rounded-lg">
         {data && (
           <div>
             <p>America/Vancouver</p>
             <p>Current Time: {data}</p>
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   </main>
   );
