@@ -44,10 +44,10 @@ export default function SFU(){
         <h1 className="text-red-500 flex flex-lf justify-center font-bold text-xl"> Residences </h1>
         <article className=" px-2 py-10 rounded-lg flex flex-lf justify-center">
           <h1>
-            <Link href="https://www.sfu.ca/~jnr2/SFU1/BNResidence.html"  className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Burnaby Residence</Link>
+            <Link href="https://www.sfu.ca/~jnr2/SFU1/BNResidence.html"  className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Burnaby</Link>
           </h1>
           <h1> 
-            <Link href="https://www.sfu.ca/~jnr2/SFU1/VNResidence.html"  className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Vancouver Residence</Link>
+            <Link href="https://www.sfu.ca/~jnr2/SFU1/VNResidence.html"  className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Vancouver</Link>
           </h1>
         </article><br></br><br></br>
         <footer>
