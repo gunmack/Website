@@ -10,7 +10,7 @@ export default function SFU(){
     return(
         <main className="bg-zinc-900 flex flex-col items-center justify-between">
      
-      <div className=" flex flex-col items-center justify-between px-2">
+      <div className=" flex flex-col items-center justify-between px-10">
         <h1 className=" text-red-500 font-mono  py-20 text-3xl ">Simon Fraser University (1965)</h1>
       </div>
       <div className="px-20">
