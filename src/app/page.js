@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head';
+
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
@@ -42,9 +42,9 @@ export default function Home() {
 
   return (
   <main className="bg-zinc-900 flex flex-col items-center justify-between ">
-    <Head>
+    {/* <Head>
       <link rel="icon" href="/favicon.ico/" sizes="any" />
-    </Head>
+    </Head> */}
     <div className=" flex flex-col items-center justify-between px-10">
       <h1 className="text-blue-500 font-mono py-20 text-3xl ">Julkar Naine Reedoy</h1>
     </div>
