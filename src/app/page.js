@@ -28,7 +28,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-between py-10 px-2 text-lg rounded-lg">
         <h1><br></br><br></br>
           <Link href="/SFU"  className="block border border-zinc-900 rounded-lg p-4 hover:bg-blue-900 hover:shadow-lg">
-            <Image src="/images/SFU.png" alt="SFU" width={200} height={10} className="w-auto h-auto mb-4 rounded-lg px-5" ></Image>
+            <Image src="/SFU.png" alt="SFU" width={200} height={10} className="w-auto h-auto mb-4 rounded-lg px-5" ></Image>
             SFU Cmapus timeline
           </Link>
         </h1><br></br>
@@ -38,7 +38,7 @@ export default function Home() {
           <h1>
 
             <Link href="https://www.linkedin.com/in/julkar-naine-reedoy-211015217/" target="_blank"  className="block border border-zinc-900 rounded-lg p-4 hover:bg-red-900 hover:shadow-lg">
-              <Image src="/images/linkedIn.png" alt="LinkedIn" width={50} height={10} className=" w-auto h-auto mb-4 rounded-lg"></Image>
+              <Image src="/linkedIn.png" alt="LinkedIn" width={50} height={10} className=" w-auto h-auto mb-4 rounded-lg"></Image>
               LinkedIn
             </Link>
           </h1>
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="  flex items-center  px-10 text-lg rounded-lg">
           <h1> <br></br>
             <Link href="https://github.com/gunmack" target="_blank"  className="block border border-zinc-900 rounded-lg p-4 hover:bg-neutral-50 hover:shadow-lg">
-              <Image src="/images/gitHub.png" alt="GitHub" width={50} height={10} className=" w-auto h-auto mb-4 rounded-lg"></Image>
+              <Image src="/gitHub.png" alt="GitHub" width={50} height={10} className=" w-auto h-auto mb-4 rounded-lg"></Image>
               <p className='  text-red-900'>
                 GitHub
               </p>
