@@ -29,7 +29,7 @@ export default function Home() {
         <h1><br></br><br></br>
           <Link href="/SFU"  className="block border border-zinc-900 rounded-lg p-4 hover:bg-blue-900 hover:shadow-lg">
             <Image src="/images/SFU.png" alt="SFU" width={200} height={10} className="w-auto h-auto mb-4 rounded-lg px-5" ></Image>
-            Website about SFU campuses
+            SFU Cmapus timeline
           </Link>
         </h1><br></br>
       </div>
