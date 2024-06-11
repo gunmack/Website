@@ -16,7 +16,7 @@ export default function Home() {
     <div className="px-20">
       <article className="font-serif text-neutral-50 bg-green-900 px-10 py-10 rounded-lg flex flex-col items-center justify-between text-md">
         <p>
-          Hi, my name is Julkar ( Juul-car ). I am a 2nd year Computing Science Student at Simon Fraser University. <br></br>
+          Hi, my name is Julkar. I am a 2nd year Computing Science Student at Simon Fraser University. <br></br>
             My preferred languages are:<br></br> 
                 -English<br></br>  -C<br></br>  -Python<br></br><br></br>
             I enjoy working with abstract data structures in C and C++.
