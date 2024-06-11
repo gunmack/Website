@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vancouver Campus</title>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     
+        <link rel="icon" type="image/x-icon" href="images/SFU.png">
+        <link rel="stylesheet" href="./Web1.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+      
+    </head>
+   
+
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-top rounded-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.gunmack.dev/SFU">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Burnaby.html">Burnaby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Vancouver.html">Vancouver</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Surrey.html">Surrey</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Residences
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="BNResidence.html">Burnaby</a></li>
+                  <li><a class="dropdown-item" href="VNResidence.html">Vancouver</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.sfu.ca/security/sfuroadconditions/" target="_blank">Campus Road Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/maps/place/Simon+Fraser+University+-+Vancouver+Campus/@49.2845894,-123.1136487,17z/data=!3m2!4b1!5s0x548671785ced048b:0xd1fb7c0b597d9dbc!4m6!3m5!1s0x5486717860837f99:0xca38b70b0694419a!8m2!3d49.2845894!4d-123.11146!16s%2Fm%2F0dkg3t6" target="_blank">Directions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <header>
+      <article>
+          <h1>Vancouver Campus</h1>
+          <h4>Located in Downtown Vancouver</h4><br>
+      </article>
+    </header>
+
+    <body style="background-image: url(images/sfuVAN.png); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+      
+
+        <main>
+
+          <article>
+            <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap" aria-controls="OfcMap" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap" aria-labelledby="OfcMapLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map = L.map('map').setView([49.2825, -123.1084], 20);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map);
+                  var marker = L.marker([49.2825, -123.1084]).addTo(map)
+                  marker.bindPopup("SFU Goldcorp Centre for the Arts");
+                </script>
+              </div>
+            </div>
+            <h4>1892</h4>
+            <h5>Goldcord Centre for the Arts</h5>
+
+            <div id="carousel1" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/goldcorp1.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="Goldcorp exterior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/goldcorp2.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Goldcorp interior 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/goldcorp3.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Goldcorp interior 2">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+            
+          </article>
+
+          <article>
+            <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap1" aria-controls="OfcMap1" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap1" aria-labelledby="OfcMap1Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap1Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map1" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map1 = L.map('map1').setView([49.28437584325951, -123.11485564127841], 20);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map1);
+                  var marker = L.marker([49.28437584325951, -123.11485564127841]).addTo(map1)
+                  marker.bindPopup("Segal Graduate School of Business");
+                </script>
+              </div>
+            </div>
+            <h4>1916</h4>
+            <h5>Segal Graduate School of Business</h5>
+
+            <div id="carousel2" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/segal1.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="Segal exterior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/segal2.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Segal interior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+          
+          </article>
+
+          <article>
+            <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap2" aria-controls="OfcMap2" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap2" aria-labelledby="OfcMap2Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap2Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map2" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map2 = L.map('map2').setView([49.28456044669346, -123.09092357593474], 16);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map2);
+                  var marker = L.marker([49.28456044669346, -123.09092357593474]).addTo(map2)
+                  marker.bindPopup("611 Alexander Visual Art Studios");
+                </script>
+              </div>
+            </div>
+            <h4>1926</h4>
+            <h5>611 Alexander Visual Art Studios</h5>
+            <img src="images/611.jpg" style="height: 500px;" class="img-fluid" alt="611 Alexander Street exterior">
+          </article>
+
+          <article>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap3" aria-controls="OfcMap3" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap3" aria-labelledby="OfcMap3Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap3Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map3" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map3 = L.map('map3').setView([49.2821, -123.0992], 18);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map3);
+                  var marker = L.marker([49.2821, -123.0992]).addTo(map3)
+                  marker.bindPopup("312 Main Street");
+                </script>
+              </div>
+            </div>
+            <h4>1953</h4>
+            <h5>312 Main Street</h5>
+
+            <div id="carousel3" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/312ext.png"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="312 Main Street exterior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/312int.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="312 Main Street interior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+           
+          </article>
+
+          <article>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap4" aria-controls="OfcMap4" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap4" aria-labelledby="OfcMap4Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap4Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map4" style="width:auto; height:500px;" ></div>
+                <script> 
+                  // var map = L.map('map4').setView([49.2821, -123.0992], 16);
+                  // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  // maxZoom: 19,
+                  // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  // }).addTo(map4);
+                  // var marker = L.marker([49.2821, -123.0992]).addTo(map4)
+                  // marker.bindPopup("Harbour Centre");
+                  
+                  let map4;
+                  document.getElementById('OfcMap4').addEventListener('shown.bs.offcanvas', function () {
+                    if (!map4) {
+                      map4 = L.map('map4').setView([49.28491733480233, -123.11183941640844], 18);
+                      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      maxZoom: 19,
+                      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                      }).addTo(map4);
+                      L.marker([49.28491733480233, -123.11183941640844]).addTo(map4).bindPopup("Harbour Centre");
+                    }          
+                    else {
+                      map4.invalidateSize();
+                    }
+                  });
+                </script>
+              </div>
+            </div>
+            <h4>1989</h4>
+            <h5>Harbour Centre</h5>
+
+            <div id="carousel4" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carousel4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/HC1.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="Harbour Centre in skyline">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/HC2.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Harbour Centre entrance">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/HCint1.png"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Harbour Centre interior 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/HCint2.png"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Harbour Centre interior 2">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+           
+          </article>
+
+          <article>
+            <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap5" aria-controls="OfcMap5" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap5" aria-labelledby="OfcMap5Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap5Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map5" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map5 = L.map('map5').setView([49.28436528360731, -123.11286598329187], 20);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map5);
+                  var marker = L.marker([49.28436528360731, -123.11286598329187]).addTo(map5)
+                  marker.bindPopup("Morris J. Wosk Centre for Dialogue");
+                </script>
+              </div>
+            </div>
+            <h4>2000</h4>
+            <h5>Morris J. Wosk Centre for Dialogue</h5>
+
+            <div id="carousel5" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/VRcampus.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="Morris J. Wosk exterior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/mjw1.png"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Morris J. Wosk interior 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/mjw2.png"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Morris J. Wosk interior 2">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+            
+          </article>
+
+          <article>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap6" aria-controls="OfcMap6" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap6" aria-labelledby="OfcMap6Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap6Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map6" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map6 = L.map('map6').setView([49.28448571792819, -123.11942497470446], 20);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map6);
+                  var marker = L.marker([49.28448571792819, -123.11942497470446]).addTo(map6)
+                  marker.bindPopup("The Bill Reid Centre for Northwest Coast Art Studies");
+                </script>
+              </div>
+            </div>
+            <h4>2011</h4>
+            <h5>The Bill Reid Centre for Northwest Coast Art Studies</h5>
+            <img src="images/BRC.jpg" style="height: 500px;" class="img-fluid" alt="Bill Reid Gallery of Northwest Coast Art">
+          </article>
+
+          <article>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#OfcMap7" aria-controls="OfcMap7" style="top:5%;">
+              Toggle Map
+            </button>
+                
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="OfcMap7" aria-labelledby="OfcMap7Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="OfcMap7Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map7" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map7 = L.map('map7').setView([49.28473965014159, -123.11216927838062], 20);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map7);
+                  var marker = L.marker([49.28473965014159, -123.11216927838062]).addTo(map7)
+                  marker.bindPopup("The Bill Reid Centre for Northwest Coast Art Studies");
+                </script>
+              </div>
+            </div>
+            <h4></h4>2016</h4>
+            <h5>SFU VentureLabs</h5>
+            <img src="images/sfu2.png" style="height: 500px;" class="img-fluid" alt="SFU VentureLabs">
+          </article>
+
+        </main>
+
+    </body>
+    <footer>
+      <article>
+          <p class="p2">All information sourced from <a href="https://www.sfu.ca/" target="_blank">sfu.ca</a> and <a href="https://en.wikipedia.org/wiki/Simon_Fraser_University" target="_blank"> wikipedia.org</a> <br>
+          Created by <a href="https://www.gunmack.dev/" target="_blank">Julkar Naine Reedoy</a></p>
+        </article>
+    </footer>
+</html>

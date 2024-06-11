@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Surrey Campus</title>
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+        <link rel="icon" type="image/x-icon" href="images/SFU.png">
+        <link rel="stylesheet" href="./Web1.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        
+    </head>
+   
+
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.gunmack.dev/SFU">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Burnaby.html">Burnaby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Vancouver.html">Vancouver</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Surrey.html">Surrey</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Residences
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="BNResidence.html">Burnaby</a></li>
+                    <li><a class="dropdown-item" href="VNResidence.html">Vancouver</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://www.sfu.ca/security/sfuroadconditions/" target="_blank">Campus Road Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/maps/place/Simon+Fraser+University+-+Surrey+Campus/@49.1865905,-122.853558,17z/data=!3m1!4b1!4m6!3m5!1s0x5485d9d358d76255:0x27cc0a8105206a6c!8m2!3d49.1865906!4d-122.8490733!16s%2Fm%2F0dkg3t3" target="_blank">Directions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <header>
+      <article>
+        <h1>Surrey Campus</h1>
+        <h4>Located in Surrey Central</h4>
+      </article>
+    </header>
+
+    <body style="background-image: url(images/sfuSurrey.png); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <main>
+          
+          <article>
+              <button class="btn  btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMap1" aria-controls="offCanvasMap1" style="top:5%;">
+                Toggle Map
+              </button>
+              <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offCanvasMap1" aria-labelledby="offCanvasMap1Label">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offCanvasMap1Label"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div id="map" style="width:auto; height:500px;" ></div>
+                  <script> 
+                    var map = L.map('map').setView([49.1866, -122.8491], 16);
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+                    var marker = L.marker([49.1866, -122.8491]).addTo(map)
+                    marker.bindPopup("SFU Surrey Campus");
+                  </script>
+                </div>
+              </div>
+        
+            <h4>2006</h4><br>
+            <h5>Surrey Central City Campus</h5>
+            <div id="carousel1" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/SRYC.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="Surrey Central City Campus interior 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/sryc2.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="Surrey Central City Campus interior 2">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+          </article>
+
+          <article>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasMap2" aria-controls="offCanvasMap2" style="top:5%;">
+              Toggle Map
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offCanvasMap2" aria-labelledby="offCanvasMap2Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offCanvasMap2Label"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div id="map1" style="width:auto; height:500px;" ></div>
+                <script> 
+                  var map1 = L.map('map1').setView([49.1893, -122.8503], 16);
+                  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 19,
+                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  }).addTo(map1);
+                  var marker = L.marker([49.1893, -122.8503]).addTo(map1)
+                  marker.bindPopup("SFU Surrey Campus");
+                </script>
+              </div>
+            </div>
+
+            <h4>2019</h4><br>
+            <h5>Sustainable Energy Engineering Building</h5>
+            <div id="carousel2" class="carousel slide">
+
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/SEEBout.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid"alt="SEEB exterior">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/SEEB2.jpg"  class="d-block w-100" style="height: 500px;" class="img-fluid" alt="SEEB interior stairs">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </article>
+
+        </main>
+
+    </body>
+    <footer>
+      <article>
+        <p class="p2">All information sourced from <a href="https://www.sfu.ca/" target="_blank">sfu.ca</a> and <a href="https://en.wikipedia.org/wiki/Simon_Fraser_University" target="_blank"> wikipedia.org</a> <br>
+          Created by <a href="https://www.gunmack.dev/" target="_blank"> Julkar Naine Reedoy</a> </p>
+      </article>
+    </footer>
+</html>
