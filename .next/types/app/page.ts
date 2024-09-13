@@ -1,4 +1,4 @@
-// File: C:\Users\jreed\OneDrive\Documents\portfolio\src\app\page.js
+// File: /mnt/c/Users/jreed/Code/Website/src/app/page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
@@ -21,6 +21,7 @@ checkFields<Diff<{
   generateMetadata?: Function
   viewport?: any
   generateViewport?: Function
+  experimental_ppr?: boolean
   
 }, TEntry, ''>>()
 
