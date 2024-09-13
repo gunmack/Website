@@ -1,26 +1,45 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-fa52f272156eafd3.js",
+      "static/chunks/fd9d1056-dfc0d8741092951e.js",
+      "static/chunks/23-2aea0b10a116ffd1.js",
+      "static/chunks/main-app-db4bc72376d600aa.js",
+      "static/chunks/app/_not-found/page-4a0204e068aa695f.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-fa52f272156eafd3.js",
+      "static/chunks/fd9d1056-dfc0d8741092951e.js",
+      "static/chunks/23-2aea0b10a116ffd1.js",
+      "static/chunks/main-app-db4bc72376d600aa.js",
+      "static/css/6976933bf4b70e56.css",
+      "static/chunks/app/layout-6cb12afe6e40fa44.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-fa52f272156eafd3.js",
+      "static/chunks/fd9d1056-dfc0d8741092951e.js",
+      "static/chunks/23-2aea0b10a116ffd1.js",
+      "static/chunks/main-app-db4bc72376d600aa.js",
+      "static/chunks/138-96d48724ddd381d0.js",
+      "static/chunks/648-515cfa90c99d6ef4.js",
+      "static/chunks/app/page-f9dce9a4b0085304.js"
     ],
     "/SFU/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/SFU/page.js"
+      "static/chunks/webpack-fa52f272156eafd3.js",
+      "static/chunks/fd9d1056-dfc0d8741092951e.js",
+      "static/chunks/23-2aea0b10a116ffd1.js",
+      "static/chunks/main-app-db4bc72376d600aa.js",
+      "static/chunks/138-96d48724ddd381d0.js",
+      "static/chunks/583-e360ddcea12e8685.js",
+      "static/chunks/app/SFU/page-f2fc9f4981ed1804.js"
     ],
     "/SFU/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/SFU/layout.css",
-      "static/chunks/app/SFU/layout.js"
+      "static/chunks/webpack-fa52f272156eafd3.js",
+      "static/chunks/fd9d1056-dfc0d8741092951e.js",
+      "static/chunks/23-2aea0b10a116ffd1.js",
+      "static/chunks/main-app-db4bc72376d600aa.js",
+      "static/css/628765f20b848f76.css",
+      "static/chunks/app/SFU/layout-d58049b211f2f44e.js"
     ]
   }
 }
