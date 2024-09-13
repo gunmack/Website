@@ -44,7 +44,7 @@ export default function Home() {
                 <Image src="/images/SFU.png" alt="SFU" width={200} height={10} className="w-auto h-auto mb-4 rounded-lg px-5" />
                 
                 <p className="text-center justify-between px-6">SFU Campus Timeline<br></br>
-                - Made with Bootstrap<br></br>
+                👉 Made with Bootstrap<br></br>
                 </p>
 
               </Link>
