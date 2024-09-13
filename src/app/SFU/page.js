@@ -20,27 +20,27 @@ export default function SFU(){
   }
   
   return(
-  <main className="bg-zinc-900 flex flex-col items-center justify-between">
+  <main className="bg-zinc-900 flex flex-col items-center justify-between mx-60 my-20 px-60 rounded-md">
 
     <div className=" flex flex-col items-center justify-between px-10">
       <h1 className=" text-red-500 font-mono  py-20 text-5xl ">Simon Fraser University (1965)</h1>
     </div>
       
     <div>
-      <button onClick={() => setIsOpen(true)} className="bg-red-900 hover:bg-red-400 text-white  font-bold py-2 px-5 rounded-full">**Disclaimer**</button>
+      <button onClick={() => setIsOpen(true)} className="bg-red-900 hover:bg-cyan-900 text-white  font-bold py-2 px-5 rounded-full">**Disclaimer**</button>
       <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
         <h1>
           <p className='text-black'>The linked pages were built using Bootstrap<br></br>
             For best viewing exeperience, use a PC/Laptop/Tablet 
           </p>
         </h1>
-        <button onClick={() => setIsOpen(false)} className='text-neutral-50 bg-red-500 rounded-md px-1  hover:bg-green-400'>Ok</button>
+        <button onClick={() => setIsOpen(false)} className='text-neutral-50 bg-red-900 rounded-md px-1  hover:bg-cyan-900'>Ok</button>
       </Modal>
     </div><br></br><br></br>
 
-    <div className="px-30">
-      <article className="font-serif text-neutral-50 bg-cyan-900 px-20 py-10 mx-40 rounded-lg flex flex-col items-center justify-between text-md">
-        <p>
+    <div className=" bg-cyan-900 rounded-lg">
+      <article className="font-serif text-neutral-50 px-10 py-10  rounded-lg flex flex-col text-center justify-between text-md">
+        <p className="bg-zinc-900 p-10 m-20 rounded-md">
           Initial planning for the University began in 1962 and was approved by the Legislature of British Columbia in 1963. 
           It was named after the fur trader and explorer, Mr. Simon Fraser.<br></br><br></br>
           Gordon M. Shrum was appointed as the first chancellor of Simon Fraser University. 
@@ -52,40 +52,41 @@ export default function SFU(){
           The campus finally opened to 2500 students on September 9th, 1965.
         </p>
       </article>
-    </div><br></br><br></br>
-    
-    <div>
-      <h1 className="text-red-500 flex flex-lf justify-center font-bold text-xl"> Campuses </h1>
+
+      <h1 className="text-red-700 flex flex-lf justify-center font-bold text-xl"> Campuses </h1>
       <article className=" px-20 py-10 rounded-lg flex flex-lf justify-center">
         
         <h1>
-          <Link href="https://www.sfu.ca/~jnr2/SFU1/Burnaby.html" className="bg-red-900 hover:bg-red-400 text-white  font-bold px-5 py-2 rounded-full"> Burnaby </Link>
+          <Link href="https://www.sfu.ca/~jnr2/SFU1/Burnaby.html" className="bg-zinc-900 hover:bg-red-900 text-white  font-bold px-5 py-2 rounded-full"> Burnaby </Link>
         </h1>
         
         <h1> 
-          <Link href="https://www.sfu.ca/~jnr2/SFU1/Vancouver.html" className="bg-red-900 hover:bg-red-400 text-white  font-bold px-5 py-2 rounded-full"> Vancouver </Link>
+          <Link href="https://www.sfu.ca/~jnr2/SFU1/Vancouver.html" className="bg-zinc-900 hover:bg-red-900 text-white  font-bold px-5 py-2 rounded-full"> Vancouver </Link>
         </h1>
         
         <h1> 
-          <Link href="https://www.sfu.ca/~jnr2/SFU1/Surrey.html" className="bg-red-900 hover:bg-red-400 text-white  font-bold py-2 px-5 rounded-full"> Surrey </Link>
+          <Link href="https://www.sfu.ca/~jnr2/SFU1/Surrey.html" className="bg-zinc-900 hover:bg-red-900 text-white  font-bold py-2 px-5 rounded-full"> Surrey </Link>
         </h1>
         
       </article>
         
-      <h1 className="text-red-500 flex flex-lf justify-center font-bold text-xl"> Residences </h1>
+      <h1 className="text-red-700 flex flex-lf justify-center font-bold text-xl"> Residences </h1>
       <article className=" px-2 py-10 rounded-lg flex flex-lf justify-center">
         
         <h1>
-          <Link href="https://www.sfu.ca/~jnr2/SFU1/BNResidence.html"  className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Burnaby </Link>
+          <Link href="https://www.sfu.ca/~jnr2/SFU1/BNResidence.html"  className="bg-zinc-900 hover:bg-red-900 text-white font-bold py-2 px-2 rounded-full"> Burnaby </Link>
         </h1>
           
         <h1> 
-          <Link href="https://www.sfu.ca/~jnr2/SFU1/VNResidence.html"  className="bg-red-900 hover:bg-red-400 text-white font-bold py-2 px-2 rounded-full"> Vancouver </Link>
+          <Link href="https://www.sfu.ca/~jnr2/SFU1/VNResidence.html"  className="bg-zinc-900 hover:bg-red-900 text-white font-bold py-2 px-2 rounded-full"> Vancouver </Link>
         </h1>
       </article><br></br><br></br>
-        
+    </div><br></br><br></br>
+    
+    <div>
+      
       <footer>
-        <p className="text-cyan-500 font-serif text-lg flex flex-col items-center justify-between px-2">
+        <p className="text-cyan-500 font-serif text-lg flex flex-col items-center text-center justify-between px-2">
           All information sourced from 
           <Link href="https://www.sfu.ca/" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'>sfu.ca </Link> and 
           <Link href="https://en.wikipedia.org/wiki/Simon_Fraser_University" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'> 

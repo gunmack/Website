@@ -6,16 +6,16 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-  <main className="bg-zinc-900 flex flex-col items-center justify-between py-10">
-    <div className=" flex flex-col items-center justify-between px-10">
-      <h1 className="text-blue-500 font-mono py-10 text-5xl ">Julkar Naine Reedoy</h1>
+  <main className="bg-zinc-900 flex flex-col items-center justify-between mx-30 py-10 sm:mx-1 rounded-md">
+    <div className=" flex flex-col items-center justify-between px-10 sm:px-1 text-blue-500 font-mono py-10 text-center text-4xl">
+      <h1>Julkar Naine Reedoy</h1>
     </div>
 
-    <div className="px-20">
+    <div className="px-10 sm:px-1">
       
-      <article className="font-serif text-neutral-50 bg-green-900 px-10 py-10 rounded-lg flex flex-col items-center text-start justify-between text-md">
+      <article className="font-serif text-neutral-50 bg-cyan-900 px-10 py-10 rounded-lg flex flex-col items-center text-start justify-between text-md">
 
-        <div className="bg-blue-900 mx-20 p-20 rounded-lg">
+        <div className="bg-red-900 mx-10 p-10 sm:mx-2 rounded-lg">
         
           <p>
             Hi, my name is Julkar ( Juul-car ) and welcome to my page :)<br></br> 
@@ -40,7 +40,7 @@ export default function Home() {
         <div>
           <div className="flex flex-col items-center justify-between px-2 text-lg rounded-lg">
             <h1><br></br><br></br>
-              <Link href="/SFU"  className="block  rounded-lg p-4 hover:bg-blue-900 hover:shadow-lg ">
+              <Link href="/SFU"  className="block  rounded-lg p-4 hover:bg-zinc-900 hover:shadow-lg ">
                 <Image src="/images/SFU.png" alt="SFU" width={200} height={10} className="w-auto h-auto mb-4 rounded-lg px-5" />
                 
                 <p className="text-center justify-between px-6">SFU Campus Timeline<br></br>
@@ -51,11 +51,11 @@ export default function Home() {
             </h1><br></br>
           </div>
 
-          <div className='grid grid-cols-2  bg-green-900 rounded-lg'>
+          <div className='grid grid-cols-2  bg-cyan-900 rounded-lg'>
             
             <div className=" flex items-center  px-10 text-md rounded-lg">
               <h1>
-                <Link href="https://www.linkedin.com/in/julkar-naine-reedoy-211015217/" target="_blank"  className="block   bg-green-900  rounded-lg p-4 hover:bg-red-900 hover:shadow-lg">
+                <Link href="https://www.linkedin.com/in/julkar-naine-reedoy-211015217/" target="_blank"  className="block   bg-cyan-900  rounded-lg p-4 hover:bg-red-900 hover:shadow-lg">
                   <Image src="/images/linkedIn.png" alt="LinkedIn" width={50} height={10} className=" w-auto h-auto  rounded-lg"></Image>
                   LinkedIn
                 </Link>
@@ -64,7 +64,7 @@ export default function Home() {
 
             <div className="  flex items-center  px-10 text-lg rounded-lg">
               <h1> 
-                <Link href="https://github.com/gunmack" target="_blank"  className="block  bg-green-900  rounded-lg p-4 hover:bg-red-900 hover:shadow-lg">
+                <Link href="https://github.com/gunmack" target="_blank"  className="block  bg-cyan-900  rounded-lg p-4 hover:bg-red-900 hover:shadow-lg">
                   <Image src="/images/gitHub.png" alt="GitHub" width={50} height={10} className=" w-auto h-auto  rounded-lg"></Image>
                   GitHub
                 </Link>
