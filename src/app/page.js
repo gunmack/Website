@@ -27,7 +27,7 @@ export default function Home() {
               <li>Python</li>
               <br></br>
             I enjoy working with abstract data structures in C and C++.<br></br>
-            I have also created webpages using JavaScript such as the one you are viewing right now.
+            I have also created webpages using React and Tailwind such as the one you are viewing right now.
             <br></br><br></br>**This page was created using Next.js***
           </p>
 
