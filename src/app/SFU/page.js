@@ -20,10 +20,10 @@ export default function SFU(){
   }
   
   return(
-  <main className="bg-zinc-900 flex flex-col items-center justify-between mx-60 my-20 px-60 rounded-md">
+  <main className="bg-zinc-900 flex flex-col mx-30 py-10 sm:mx-1 items-center justify-between">
 
-    <div className=" flex flex-col items-center justify-between px-10">
-      <h1 className=" text-red-500 font-mono  py-20 text-5xl ">Simon Fraser University (1965)</h1>
+    <div className=" flex flex-col items-center ">
+      <h1 className=" text-red-500 font-mono text-5xl px-10 py-10 text-center">Simon Fraser University (1965)</h1>
     </div>
       
     <div>
@@ -38,9 +38,9 @@ export default function SFU(){
       </Modal>
     </div><br></br><br></br>
 
-    <div className=" bg-cyan-900 rounded-lg">
-      <article className="font-serif text-neutral-50 px-10 py-10  rounded-lg flex flex-col text-center justify-between text-md">
-        <p className="bg-zinc-900 p-10 m-20 rounded-md">
+    <div className=" bg-cyan-900 rounded-lg p-10 mx-40">
+      <article className="bg-red-900 font-serif text-neutral-50 rounded-lg flex flex-col text-center text-md sm:mx-4 py-6 mx-8 px-8">
+        <p>
           Initial planning for the University began in 1962 and was approved by the Legislature of British Columbia in 1963. 
           It was named after the fur trader and explorer, Mr. Simon Fraser.<br></br><br></br>
           Gordon M. Shrum was appointed as the first chancellor of Simon Fraser University. 
@@ -51,7 +51,7 @@ export default function SFU(){
           18 months of construction took place beginning in the spring of 1964. 
           The campus finally opened to 2500 students on September 9th, 1965.
         </p>
-      </article>
+      </article><br></br>
 
       <h1 className="text-red-700 flex flex-lf justify-center font-bold text-xl"> Campuses </h1>
       <article className=" px-20 py-10 rounded-lg flex flex-lf justify-center">
@@ -86,7 +86,7 @@ export default function SFU(){
     <div>
       
       <footer>
-        <p className="text-cyan-500 font-serif text-lg flex flex-col items-center text-center justify-between px-2">
+        <p className="text-cyan-500 font-serif text-lg flex flex-col items-center text-center  px-2">
           All information sourced from 
           <Link href="https://www.sfu.ca/" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'>sfu.ca </Link> and 
           <Link href="https://en.wikipedia.org/wiki/Simon_Fraser_University" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'> 
