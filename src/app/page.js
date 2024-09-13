@@ -21,11 +21,15 @@ export default function Home() {
             Hi, my name is Julkar ( Juul-car ) and welcome to my page :)<br></br> 
             I am a 2nd year Computing Science Student at Simon Fraser University. <br></br>
             My preferred languages are:<br></br><br></br> 
-              <li>C</li>
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>Python</li>
+          </p>
+          <ul>
+            <li>👉 C</li>
+            <li>👉 JavaScript</li>
+            <li>👉 Java</li>
+            <li>👉 Python</li>
+          </ul>
               <br></br>
+          <p>   
             I enjoy working with abstract data structures in C and C++.<br></br>
             I have also created webpages using JavaScript such as the one you are viewing right now.
             <br></br><br></br>**This page was created using Next.js***
