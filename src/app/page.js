@@ -32,7 +32,7 @@ export default function Home() {
           <p>   
             I enjoy working with abstract data structures in C and C++.<br></br>
             I have also created webpages using JavaScript such as the one you are viewing right now.
-            <br></br><br></br>**This page was created using Next.js***
+            <br></br><br></br>***This page was created using Next.js***
           </p>
 
         </div>

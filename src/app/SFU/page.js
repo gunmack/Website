@@ -54,7 +54,7 @@ export default function SFU(){
       </article>
     </div><br></br><br></br>
     
-    <div className="min-h-screen">
+    <div>
       <h1 className="text-red-500 flex flex-lf justify-center font-bold text-xl"> Campuses </h1>
       <article className=" px-20 py-10 rounded-lg flex flex-lf justify-center">
         
