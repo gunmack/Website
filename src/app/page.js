@@ -1,19 +1,16 @@
-"use client";
-
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 
 export default function Home() {
   return (
-  <main className="bg-zinc-900 flex flex-col items-center mx-30 py-10 sm:mx-1 rounded-md">
+  <main className="bg-zinc-900 flex flex-col items-center mx-30 xl:px-80 py-10 sm:mx-1 rounded-md">
     <div className=" flex flex-col items-center px-10 sm:px-1 text-blue-500 font-mono py-10 text-center text-4xl">
       <h1>Julkar Naine Reedoy</h1>
     </div>
 
     <div>
       
-      <article className="font-serif text-neutral-50 bg-cyan-900 rounded-lg flex flex-col items-center text-start text-md">
+      <article className="font-mono text-neutral-50 bg-cyan-900 rounded-lg flex flex-col items-center text-start text-md">
 
         <div className="bg-red-900 rounded-lg p-10  m-10 ">
         
