@@ -15,38 +15,35 @@ export default function Navigation() {
   return (
     <Navbar className="w-full">
 
-        <NavbarBrand>
+      <NavbarBrand>
         <Image src="/images/j_Logo.png" alt="logo" width={25} height={2} className="rounded-lg"></Image>
       </NavbarBrand>
 
-        <NavbarContent className="flex md:w-auto">
-          <NavbarItem className="hidden sm:flex sm:space-x-10">
-            {menuItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.link}
-                className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
+      <NavbarContent className="flex md:w-auto">
+        <NavbarItem className="hidden sm:flex sm:space-x-10">
+          {menuItems.map((item, index) => (
+            <Link
+              key={index}
+              href={item.link}
+              className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
               >
-                {item.text}
-              </Link>
-            ))}
-          </NavbarItem>
+              {item.text}
+            </Link>
+          ))}
+        </NavbarItem>
       </NavbarContent>
       
       <NavbarContent>
-          {/* Hamburger Menu for small screens */}
-          <NavbarItem className="sm:hidden justify-self-end">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
-              aria-label="Toggle menu"
-            >
-              {/* <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg> */}
-               <Image src="/images/burger-menu-icon-vector.jpg" alt="logo" width={25} height={2} className="rounded-lg"></Image>
-            </button>
-          </NavbarItem>
+        {/* Hamburger Menu for small screens */}
+        <NavbarItem className="sm:hidden justify-self-end">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
+            aria-label="Toggle menu"
+          >
+            <Image src="/images/burger-menu-icon-vector.jpg" alt="logo" width={25} height={2} className="rounded-lg"></Image>
+          </button>
+        </NavbarItem>
       </NavbarContent>
 
       {/* Dropdown Menu for small screens */}
