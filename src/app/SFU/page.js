@@ -28,15 +28,12 @@ export default function SFU(){
       <Navigation />
     </div>
   <main className="bg-zinc-900 flex flex-col mx-30 xl:px-80 py-10 sm:mx-1 items-center">
-   
     <div className=" flex flex-col items-center px-10 sm:px-1 text-red-500 font-mono py-10 text-center text-4xl">
       <h1>Simon Fraser University (1965)</h1>
     </div>
-    
+  
     <div>
-
       <article className="font-mono text-neutral-50 bg-cyan-900 rounded-lg flex flex-col items-center text-start text-md">
-
         <div className='pt-5'>
           <button onClick={() => setIsOpen(true)} className="bg-zinc-900 hover:bg-red-900 text-white  font-bold py-2 px-5 rounded-lg">**Disclaimer**</button>
           <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
@@ -50,7 +47,6 @@ export default function SFU(){
         </div><br></br><br></br>
 
         <div className="bg-red-900 rounded-lg px-10 pb-10 pt-5 mx-10 mb-10">
-
           <p>
             Initial planning for the University began in 1962 and was approved by the Legislature of British Columbia in 1963. 
             It was named after the fur trader and explorer, Mr. Simon Fraser.<br></br><br></br>
@@ -62,7 +58,6 @@ export default function SFU(){
             18 months of construction took place beginning in the spring of 1964. 
             The campus finally opened to 2500 students on September 9th, 1965.
           </p>
-
         </div>
 
         <h1 className="text-red-500 flex flex-lf justify-center font-bold text-3xl"> Campuses </h1>
@@ -90,9 +85,7 @@ export default function SFU(){
             <Link href="https://www.sfu.ca/~jnr2/SFU1/VNResidence.html" className="bg-zinc-900 hover:bg-red-500 text-white  font-bold items-center p-2 rounded-lg block text-center"> Vancouver </Link>
           </h1>
         </div>
-
       </article>
-
     </div>
 
     <div>
@@ -102,13 +95,9 @@ export default function SFU(){
           <Link href="https://www.sfu.ca/" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'>sfu.ca </Link> and 
           <Link href="https://en.wikipedia.org/wiki/Simon_Fraser_University" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'> 
           wikipedia.org</Link><br></br><br></br>
-          Created by <Link href="https://www.gunmack.dev/" className='hover:bg-red-900 text-neutral-50 rounded-lg px-5'>
-          Julkar Naine Reedoy </Link>
-        </p> <br></br><br></br>
+        </p> 
       </footer>
-
     </div>
-
   </main>
   </>
   )
