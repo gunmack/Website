@@ -1,57 +1,70 @@
-import React, {useState} from "react";
+import React, { useState } from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem,
-  Link,} from "@nextui-org/react";
+    Link,} from "@nextui-org/react";
 import Image from 'next/image';
 
 export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false); 
+  const menuItems = [
+    {text:"Home", link:"/"},
+    {text:"SFU Campuses", link:"/SFU"}
+  ];
+
 
   return (
     <Navbar className="w-full">
 
-      <NavbarBrand>
+        <NavbarBrand>
         <Image src="/images/j_Logo.png" alt="logo" width={25} height={2} className="rounded-lg"></Image>
       </NavbarBrand>
-     
-      {/* <div className="sm:hidden flex items-center">
-        <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none"> */}
-          {/* Hamburger icon */}
-          {/* <Image src="/images/burger-menu-icon-vector.jpg" width={25} height={25} className="rounded-lg"></Image>
-        </button>
-      </div> */}
 
-      {/* Centered Links */}
-      <NavbarContent className="flex w-full md:w-auto justify-center items-center sm:justify-between ">
-
-        <NavbarItem>
-          <Link href="/" className=" font-mono font-bold text-white hover:bg-zinc-900 rounded-full p-2" >
-            gunmack.dev
-          </Link>
-        </NavbarItem>
-        
-        <NavbarItem>
-          <Link href="/SFU" className=" font-mono font-bold text-white hover:bg-zinc-900 rounded-full p-2" >
-            gunmack.dev/SFU
-          </Link>
-        </NavbarItem>
+        <NavbarContent className="flex md:w-auto">
+          <NavbarItem className="hidden sm:flex sm:space-x-10">
+            {menuItems.map((item, index) => (
+              <Link
+                key={index}
+                href={item.link}
+                className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
+              >
+                {item.text}
+              </Link>
+            ))}
+          </NavbarItem>
+      </NavbarContent>
+      
+      <NavbarContent>
+          {/* Hamburger Menu for small screens */}
+          <NavbarItem className="sm:hidden justify-self-end">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
+              aria-label="Toggle menu"
+            >
+              {/* <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg> */}
+               <Image src="/images/burger-menu-icon-vector.jpg" alt="logo" width={25} height={2} className="rounded-lg"></Image>
+            </button>
+          </NavbarItem>
       </NavbarContent>
 
-      {isOpen && (
-        <NavbarContent className="sm:hidden flex flex-col w-full bg-zinc-900 rounded-lg p-2">
-          <NavbarItem>
-            <Link href="/" className="font-mono font-bold text-white hover:bg-cyan-900 p-2 rounded-lg">
-              gunmack.dev
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link href="/SFU" className="font-mono font-bold text-white hover:bg-cyan-900 p-2 rounded-lg">
-              gunmack.dev/SFU
-            </Link>
-          </NavbarItem>
-        </NavbarContent>
+      {/* Dropdown Menu for small screens */}
+      {isMenuOpen && (
+        <div className="absolute top-16 right-0 w-full bg-cyan-900 shadow-md z-10 sm:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            {menuItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                className="block text-neutral-50 hover:bg-zinc-900 px-3 py-2 rounded-md text-center font-mono"
+              >
+                {item.text}
+              </a>
+            ))}
+          </div>
+        </div>
       )}
     </Navbar>
   );
 }
-
