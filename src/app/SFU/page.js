@@ -1,10 +1,8 @@
 "use client";
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Modal from 'react-modal';
 import Link from 'next/link';
 import Navigation from '@/components/navbar';
-
-
 
 export default function SFU(){
   const [isOpen, setIsOpen] = useState(false)
