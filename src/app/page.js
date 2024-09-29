@@ -35,7 +35,7 @@ export default function Home() {
             I mostly work on front-end applications with React and Python.<br></br>
             I have experience working with abstract data structures in C and C++.<br></br>
             Currently, I am learning Object Oriented Programming with Java.
-            <br></br><br></br>Take a look at my resume <Link href="/files/Julkar_Reedoy_resume.pdf">📄</Link>
+            <br></br><br></br>Take a look at my resume <Link href="/files/Julkar_Reedoy_resume.pdf" target="_blank">📄</Link>
           </p>
           </div>
 
