@@ -9,8 +9,8 @@ export default function Navigation() {
   const menuItems = [
     {text:"About", link:"/"},
     {text:"SFU Campuses", link:"/SFU"},
-    {text:"Projects", link:"/Projects"},
-    {text:"Resume", link:"/Resume"}
+    // {text:"Projects", link:"/Projects"},
+    // {text:"Resume", link:"/Resume"}
   ];
 
 
