@@ -7,8 +7,10 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    {text:"Home", link:"/"},
-    {text:"SFU Campuses", link:"/SFU"}
+    {text:"About", link:"/"},
+    {text:"SFU Campuses", link:"/SFU"},
+    // {text:"Projects", link:"/Projects"},
+    // {text:"Resume", link:"/Resume"}
   ];
 
 
