@@ -1,6 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome
 
-## Getting Started
+Welcome to [gunmack.dev](https://www.gunmack.dev/)!</br>
+This is a static React website built using [Next.js](https://nextjs.org/) framework
+
+## Purpose
+
+This is meant to serve as my personal website I use to link my other projects  
+and social media accounts. I am currenty in the process of designing a [new
+personal website](https://github.com/gunmack/276_website) as part of a submission for one of my courses.  
+
+## Deployment
+
+This site is currently deployed through [Amazon Amplify](https://aws.amazon.com/amplify/) under the domain name `gunmack.dev`
+
+
+<!-- *Ignore the following -->
+
+<!-- ## Getting Started
 
 First, run the development server:
 
@@ -33,4 +49,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
