@@ -1,24 +1,33 @@
-import React, { useState } from 'react';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem,
-    Link,} from "@nextui-org/react";
-import Image from 'next/image';
+import React, { useState } from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+} from "@nextui-org/react";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    {text:"About", link:"/"},
-    {text:"SFU Campuses", link:"/SFU"},
+    { text: "About", link: "https://gunmack.github.io/archived/" },
+    { text: "SFU Campuses", link: "https://gunmack.github.io/archived/SFU" },
     // {text:"Projects", link:"/Projects"},
     // {text:"Resume", link:"/Resume"}
   ];
 
-
   return (
     <Navbar className="w-full">
-
       <NavbarBrand>
-        <Image src="/images/j_Logo.png" alt="logo" width={25} height={2} className="rounded-lg"></Image>
+        <Image
+          src="/images/j_Logo.png"
+          alt="logo"
+          width={25}
+          height={2}
+          className="rounded-lg"
+        ></Image>
       </NavbarBrand>
 
       <NavbarContent className="flex md:w-auto">
@@ -28,13 +37,13 @@ export default function Navigation() {
               key={index}
               href={item.link}
               className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
-              >
+            >
               {item.text}
             </Link>
           ))}
         </NavbarItem>
       </NavbarContent>
-      
+
       <NavbarContent>
         {/* Hamburger Menu for small screens */}
         <NavbarItem className="sm:hidden justify-self-end">
@@ -43,7 +52,13 @@ export default function Navigation() {
             className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
             aria-label="Toggle menu"
           >
-            <Image src="/images/burger-menu-icon-vector.jpg" alt="logo" width={25} height={2} className="rounded-lg"></Image>
+            <Image
+              src="/images/burger-menu-icon-vector.jpg"
+              alt="logo"
+              width={25}
+              height={2}
+              className="rounded-lg"
+            ></Image>
           </button>
         </NavbarItem>
       </NavbarContent>
