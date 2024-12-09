@@ -12,6 +12,7 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
+    { text: "Home", link: "https://www.gunmack.dev/" },
     { text: "About", link: "https://gunmack.github.io/archived/" },
     { text: "SFU Campuses", link: "https://gunmack.github.io/archived/SFU" },
     // {text:"Projects", link:"/Projects"},
