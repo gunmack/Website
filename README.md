@@ -1,17 +1,11 @@
 # Welcome
-
-Welcome to [gunmack.dev](https://www.gunmack.dev/)!</br>
 This is a static React website built using [Next.js](https://nextjs.org/) framework
 
 ## Purpose
 
-This is meant to serve as my personal website I use to link my other projects  
-and social media accounts. I am currenty in the process of designing a [new
-personal website](https://github.com/gunmack/276_website) as part of a submission for one of my courses.
+This is now an archived website. I am currenty in the process of designing a [new
+personal website](https://www.gunmack.dev/).
 
-## Deployment
-
-This site is currently deployed through [Amazon Amplify](https://aws.amazon.com/amplify/) under the domain name `gunmack.dev`
 
 <!-- *Ignore the following -->
 
