@@ -15,15 +15,13 @@ export default function Navigation() {
     { text: "Home", link: "https://www.gunmack.dev/" },
     { text: "About", link: "https://gunmack.github.io/archived/" },
     { text: "SFU Campuses", link: "https://gunmack.github.io/archived/SFU" },
-    // {text:"Projects", link:"/Projects"},
-    // {text:"Resume", link:"/Resume"}
   ];
 
   return (
     <Navbar className="w-full">
       <NavbarBrand>
         <Image
-          src="/images/j_Logo.png"
+          src="public/images/j_Logo.png"
           alt="logo"
           width={25}
           height={2}
@@ -53,13 +51,30 @@ export default function Navigation() {
             className="font-mono font-bold text-white hover:bg-zinc-900 rounded-lg p-2"
             aria-label="Toggle menu"
           >
-            <Image
-              src="/images/burger-menu-icon-vector.jpg"
-              alt="logo"
-              width={25}
-              height={2}
-              className="rounded-lg"
-            ></Image>
+            <div
+              className={`w-8 h-8 flex flex-col justify-between items-center space-y-2 
+                transition-transform duration-300 ease-in-out`}
+            >
+              <div
+                className={`w-8 h-1 bg-blue-500 transition-all duration-300 ease-in-out ${
+                  isMenuOpen
+                    ? "w-6 transform rotate-45 translate-y-3.5 "
+                    : "rotate-0 translate-y-0"
+                }`}
+              ></div>
+              <div
+                className={`w-8 h-1 bg-blue-500 transition-all duration-300 ease-in-out ${
+                  isMenuOpen ? "opacity-0" : "opacity-100"
+                }`}
+              ></div>
+              <div
+                className={`w-8 h-1 bg-blue-500 transition-all duration-300 ease-in-out ${
+                  isMenuOpen
+                    ? "w-6 transform -rotate-45 translate-y-[-14px] translate-x-[-2px]"
+                    : "rotate-0 translate-y-0"
+                }`}
+              ></div>
+            </div>
           </button>
         </NavbarItem>
       </NavbarContent>
