@@ -38,15 +38,11 @@ export default function About() {
                 in C and C++.<br></br>
                 Currently, I am learning Object Oriented Programming with Java.
                 <br></br>
-                <br></br>Take a look at my resume{" "}
-                <Link href="/files/Julkar_Reedoy_resume.pdf" target="_blank">
-                  📄
-                </Link>
               </p>
             </div>
 
             <div>
-              <div className="flex flex-col items-center px-2 text-lg rounded-lg">
+              <div className="flex flex-col items-center px-2 text-md rounded-lg">
                 <h1>
                   <br></br>
                   <br></br>
@@ -59,7 +55,7 @@ export default function About() {
                       alt="SFU"
                       width={200}
                       height={10}
-                      className="w-auto h-auto mb-4  px-5"
+                      className=" mb-4 justify-center mx-4 "
                     />
                     <p className="text-center justify-between px-6">
                       SFU Campus Timeline<br></br>
@@ -83,13 +79,14 @@ export default function About() {
                         alt="LinkedIn"
                         width={50}
                         height={10}
+                        className="mx-2"
                       ></Image>
                       LinkedIn
                     </Link>
                   </h1>
                 </div>
 
-                <div className="flex items-center  px-10 text-lg rounded-lg">
+                <div className="flex items-center  px-10 text-md rounded-lg">
                   <h1>
                     <Link
                       href="https://github.com/gunmack"
@@ -101,6 +98,7 @@ export default function About() {
                         alt="GitHub"
                         width={50}
                         height={10}
+                        className="mx-1"
                       ></Image>
                       GitHub
                     </Link>

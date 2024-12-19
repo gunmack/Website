@@ -1,11 +1,11 @@
 # Welcome
+
 This is a static React website built using [Next.js](https://nextjs.org/) framework
 
 ## Purpose
 
 This is now an archived website. I am currenty in the process of designing a [new
 personal website](https://www.gunmack.dev/).
-
 
 <!-- *Ignore the following -->
 
