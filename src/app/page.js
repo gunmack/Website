@@ -83,7 +83,6 @@ export default function About() {
                         alt="LinkedIn"
                         width={50}
                         height={10}
-                        className=" w-auto h-auto rounded-lg "
                       ></Image>
                       LinkedIn
                     </Link>
@@ -102,7 +101,6 @@ export default function About() {
                         alt="GitHub"
                         width={50}
                         height={10}
-                        className=" w-auto h-auto"
                       ></Image>
                       GitHub
                     </Link>
