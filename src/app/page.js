@@ -42,7 +42,7 @@ export default function About() {
             </div>
 
             <div>
-              <div className="flex flex-col items-center px-2 text-md rounded-lg">
+              <div className="flex flex-col items-center  text-md rounded-lg">
                 <h1>
                   <br></br>
                   <br></br>
