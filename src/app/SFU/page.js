@@ -89,7 +89,7 @@ export default function SFU() {
             <div className="px-4 sm:px-20 py-5 sm:py-10 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 justify-center">
               <h1>
                 <Link
-                  href="https://gunmack.github.io/SFU1/Burnaby.html"
+                  href="https://gunmack.github.io/SFU-Campus-Timeline/Burnaby.html"
                   className="bg-zinc-900 hover:bg-red-500 text-white  font-bold items-center p-2 rounded-lg block text-center"
                 >
                   {" "}
@@ -99,7 +99,7 @@ export default function SFU() {
 
               <h1>
                 <Link
-                  href="https://gunmack.github.io/SFU1/Vancouver.html"
+                  href="https://gunmack.github.io/SFU-Campus-Timeline/Vancouver.html"
                   className="bg-zinc-900 hover:bg-red-500 text-white  font-bold items-center p-2 rounded-lg block text-center"
                 >
                   {" "}
@@ -109,7 +109,7 @@ export default function SFU() {
 
               <h1>
                 <Link
-                  href="https://gunmack.github.io/SFU1/Surrey.html"
+                  href="https://gunmack.github.io/SFU-Campus-Timeline/Surrey.html"
                   className="bg-zinc-900 hover:bg-red-500 text-white  font-bold items-center p-2 rounded-lg block text-center"
                 >
                   {" "}
@@ -125,7 +125,7 @@ export default function SFU() {
             <div className="px-4 sm:px-20 py-5 sm:py-10 rounded-lg grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 justify-center">
               <h1>
                 <Link
-                  href="https://gunmack.github.io/SFU1/BNResidence.html"
+                  href="https://gunmack.github.io/SFU-Campus-Timeline/BNResidence.html"
                   className="bg-zinc-900 hover:bg-red-500 text-white  font-bold items-center p-2 rounded-lg block text-center"
                 >
                   {" "}
@@ -135,7 +135,7 @@ export default function SFU() {
 
               <h1>
                 <Link
-                  href="https://gunmack.github.io/SFU1/VNResidence.html"
+                  href="https://gunmack.github.io/SFU-Campus-Timeline/VNResidence.html"
                   className="bg-zinc-900 hover:bg-red-500 text-white  font-bold items-center p-2 rounded-lg block text-center"
                 >
                   {" "}

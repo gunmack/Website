@@ -13,15 +13,15 @@ export default function Navigation() {
 
   const menuItems = [
     { text: "Home", link: "https://www.gunmack.dev/" },
-    { text: "About", link: "https://gunmack.github.io/archived/" },
-    { text: "SFU Campuses", link: "https://gunmack.github.io/archived/SFU" },
+    { text: "About", link: "/" },
+    { text: "SFU Campuses", link: "/SFU" },
   ];
 
   return (
     <Navbar className="w-full">
       <NavbarBrand>
         <Image
-          src="public/images/j_Logo.png"
+          src="/images/logo.png"
           alt="logo"
           width={25}
           height={2}
