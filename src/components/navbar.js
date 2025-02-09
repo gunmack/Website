@@ -13,8 +13,8 @@ export default function Navigation() {
 
   const menuItems = [
     { text: "Home", link: "https://www.gunmack.dev/" },
-    { text: "About", link: "/" },
-    { text: "SFU Campuses", link: "/SFU" },
+    { text: "About", link: "/archived" },
+    { text: "SFU Campuses", link: "/archived/SFU" },
   ];
 
   return (
